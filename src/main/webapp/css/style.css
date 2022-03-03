@@ -1,0 +1,299 @@
+@charset "ISO-8859-1";
+
+* {
+	box-sizing: border-box;
+}
+
+footer img {
+	border-radius: 10px;
+}
+
+h1 {
+	font-weight: bold;
+	color: red;
+}
+
+#lg {
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: none;
+	padding-right: 35px;
+	float: right;
+}
+
+body {
+	padding: 0 !important;
+	margin: 0 !important;
+	font-family: Arial;
+	padding: 10px;
+	background: white;
+}
+/* Header/Blog Title */
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	text-align: center;
+	padding: 30px;
+	text-align: center;
+	background: linear-gradient(168deg, #000000, #fefbff73);
+}
+
+.header h1 {
+	font-size: 50px;
+}
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #d12121;
+}
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change color on hover*/
+.topnav a:hover {
+	background-color: #dd2b2bde;
+	text-decoration: none !important;
+	color: yellow !important;
+	font-weight: bold;
+}
+/* Create two unequal columns that floats next to each other*/
+/*left column */
+.leftcolumn {
+	padding-left: 4%;
+	float: left;
+	width: 75%;
+}
+
+.rightcolumn .card {
+	margin: 0
+}
+
+.rightcolumn .card {
+	background-color: #cfcfcf !important;
+	width: 100%;
+}
+/*Right column */
+.rightcolumn {
+	float: left;
+	width: 25%;
+	background-color: #fafafa;
+}
+
+.card img {
+	width: 80%;
+	padding-left: 10%;
+}
+/* Fake image*/
+.fakeing {
+	background-color: black;
+	width: 100%;
+	padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	float: left;
+	border: none !important;
+}
+
+.card p:nth-child(2) {
+	margin: 0;
+	margin-bottom: 15px;
+	padding-top: 40px;
+	font-family: Arial;
+	color: gray;
+	font-size: 13px;
+}
+
+.card p:nth-child(4) {
+	padding-top: 30px;
+	color: red;
+	font-weight: bold;
+}
+
+.leftcolumn :hover {
+	background-color: #f1f1f1fc;
+}
+/* Clear floats after the column*/
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/*Footer*/
+footer {
+	background-color: black !important;
+	color: white !important;
+}
+
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+
+.footer .container {
+	display: block !important;
+}
+/* Responsive layout - when the screen is less than 800px wide , make the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width:800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+/* Responsive layout-when the screen is less than 400px wide , make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width:400px) {
+	.topnav a {
+		text-align:center;
+		float: none;
+		width: 100%;
+	}
+}
+/* Login css */
+#bo {
+	display: flex;
+	height: 680px;
+}
+
+#left {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+#form {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#right {
+	background-color: #2d2630;
+	color: white;
+	font-weight: bold;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#wellc p {
+	text-align: center;
+}
+
+#form h1 {
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	color: black;
+}
+
+#button {
+	width: 150px;
+	background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+	border: 0;
+	border-radius: 12px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 2.5;
+	outline: transparent;
+	padding: 0 1rem;
+	text-align: center;
+	text-decoration: none;
+	transition: box-shadow .2s ease-in-out;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+}
+
+#button:not([disabled]):focus {
+	box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem
+		rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+#button:not([disabled]):hover {
+	box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem
+		rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+#coverbutton {
+	display: flex;
+	justify-content: center;
+}
+
+#remem {
+	padding: 0 !important;
+	margin-top: 0;
+}
+
+#check_remem {
+	display: flex !important;
+}
+/* Category*/
+.single {
+	padding: 30px 15px;
+	margin-top: 40px;
+	background: #fcfcfc;
+	border: 1px solid #f0f0f0;
+}
+
+h3.side-title {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-size: 20px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+h3.side-title:after {
+	content: '';
+	width: 60px;
+	height: 1px;
+	background: #ff173c;
+	display: block;
+	margin-top: 6px;
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+li a {
+	color: #666;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 40px;
+	display: block;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+li a:hover {
+	color: darkred;
+	text-decoration: none;
+}
+
+li:last-child a {
+	border-bottom: 0;
+}
